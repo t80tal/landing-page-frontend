@@ -157,10 +157,6 @@ nav {
   background-color: tomato;
 }
 
-.slider-item:nth-child(5) .slider-price {
-  background-color: tomato;
-}
-
 .slider-button {
   position: absolute;
   top: 430px;
@@ -223,7 +219,7 @@ nav {
 
 #offer {
   height: 100vh;
-  background-image: url('/assets/media/bg.png');
+  background-image: url('/frontend/assets/media/bg.png');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,6 +349,7 @@ nav {
 }
 
 .discount-image {
+  transition: all ease .3s;
   width: 100%;
   height: 500px;
 }
@@ -458,7 +455,7 @@ footer {
   }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
   nav {
     flex-direction: column;
     height: 130px;
@@ -516,11 +513,12 @@ footer {
     left: calc(50% - 165px);
     top: -30px;
   }
+
 }
 
 @media screen and (max-width: 635px) {
   .navbar-link {
-    margin: 20px 3px;
+    margin: 20px 14px;
   }
 
   .slider-title {
@@ -568,5 +566,9 @@ footer {
 
   footer {
     flex-direction: column;
+  }
+
+  .discount-image {
+    height: 400px;
   }
 }
