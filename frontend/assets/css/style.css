@@ -19,10 +19,12 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
@@ -59,6 +61,7 @@ nav {
   cursor: pointer;
   color: var(--deep-sky-blue);
   font-weight: 400;
+  text-align: center;
 }
 
 .navbar-link:hover {
@@ -212,6 +215,7 @@ nav {
 }
 
 .feature-desc {
+  transition: all ease .3s;
   color: gray;
   width: 100px;
   height: 100px;
@@ -236,7 +240,7 @@ nav {
   border-radius: 4px;
   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
   width: 535px;
-  min-height: 400px;
+  min-height: 470px;
   height: 55%;
   padding: 30px;
   display: flex;
@@ -516,7 +520,7 @@ footer {
 
 @media screen and (max-width: 635px) {
   .navbar-link {
-    margin: 20px 8px;
+    margin: 20px 3px;
   }
 
   .slider-title {
@@ -535,9 +539,16 @@ footer {
     right: calc(50% - 120px);
   }
 
+  .offer-form {
+    width: 340px;
+    top: 15.5%;
+    right: calc(50% - 200px);
+  }
+
   .features {
+    flex-direction: column;
     overflow: hidden;
-    padding: 50px 5px;
+    padding: 0;
   }
 
   .feature-icon {
@@ -549,6 +560,10 @@ footer {
   .feature-title {
     font-size: 18px;
     margin: 10px;
+  }
+
+  .feature-desc {
+    width: 150px;
   }
 
   footer {
