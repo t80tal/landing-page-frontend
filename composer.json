@@ -1,0 +1,15 @@
+{
+    "name": "user/tourism-landing-page",
+    "autoload": {
+        "psr-4": {
+            "TourismLandingPage\\": "./src"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "5.5"
+    },
+    "scripts": {
+        "initialize-tables": "cd src && php initialize_tables.php",
+		"start": "cd src && php -S 127.0.0.1:8004"
+	}
+}

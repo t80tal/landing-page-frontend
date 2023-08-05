@@ -1,6 +1,4 @@
-A nice looking landing page, used HTML, CSS, JS only!
-
-You can run it with live server or just open index.html
+Toruism landing page with options to leave contact info and manage it from management web
 
 Demo:
 https://tourismlp.netlify.app/
